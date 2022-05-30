@@ -10,17 +10,23 @@ public class Student{
   }
   
   public Student(Long id, String firstName, String lastName){
-   this.id = id;
+     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;
     
   }
   
-  private Long getId(Long id){
-   this.id = id; 
+  public Student(String firstName, String lastName){ 
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
   
-  private setId(Long id){
+  
+  public Long getId(){
+   return id; 
+  }
+  
+  public void setId(Long id){
    this.id = id; 
   }
 }
