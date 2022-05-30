@@ -1,6 +1,14 @@
 package com.virola.firstspringweb;
 
+import javax.persistence.Entity;
+import javax.persistence.GenerateValue;
+import javax.persistence.Id;
+
+@Entity
 public class Student{
+  
+  @Id
+  @GenerateValue
   private Long id;
   private String firstName;
   private String lastName;
